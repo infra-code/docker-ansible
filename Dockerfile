@@ -29,7 +29,8 @@ RUN apk --no-cache add \
         cargo \
         openssl-dev \
         libressl-dev \
-        build-base && \
+        build-base \
+        docker && \
     pip3 install --upgrade pip wheel && \
     pip3 install --upgrade cryptography cffi && \
     pip3 install awscliv2==${AWSCLI_VERSION} ansible==${ANSIBLE_VERSION} ansible-lint==${ANSIBLE_LINT_VERSION} && \
