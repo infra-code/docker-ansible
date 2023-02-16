@@ -19,6 +19,7 @@ RUN apk --no-cache add \
         ca-certificates \
         sshpass \
         openssh-client \
+        make \
         rsync \
         git && \
     apk --no-cache add --virtual build-dependencies \
